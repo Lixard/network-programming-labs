@@ -1,2 +1,3 @@
 rootProject.name = 'network-programming-labs'
+include '9_lab'
 
