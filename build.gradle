@@ -1,13 +1,2 @@
-plugins {
-    id 'java'
-}
-
 group 'ru.student'
 version '1.0'
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-}
