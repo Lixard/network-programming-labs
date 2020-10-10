@@ -1,4 +1,4 @@
-package ru.student;
+package ru.student.task1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
