@@ -1,5 +1,5 @@
 rootProject.name = 'network-programming-labs'
-include '9_lab'
-include '10_lab'
-include '11_lab'
+include 'lab9'
+include 'lab10'
+include 'lab11'
 
