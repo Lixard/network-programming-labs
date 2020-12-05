@@ -1,10 +1,16 @@
 package ru.student.task2;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ListsSpeedTest {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ListsSpeedTest.class);
+
     public static void main(String[] args) {
         linkedListTest();
         arrayListTest();
@@ -13,17 +19,17 @@ public class ListsSpeedTest {
     private static void linkedListTest() {
         List<Integer> linkedList = new LinkedList<>();
         long delay = addOperations(linkedList);
-        System.out.printf("linked list add = %d \n", delay);
+        LOGGER.info("Linked list add = {}", delay);
         delay = removeOperations(linkedList);
-        System.out.printf("linked list remove = %d \n", delay);
+        LOGGER.info("Linked list remove = {}", delay);
     }
 
     private static void arrayListTest() {
         List<Integer> arrayList = new ArrayList<>();
         long delay = addOperations(arrayList);
-        System.out.printf("array list add = %d \n", delay);
+        LOGGER.info("Array list add = {}", delay);
         delay = removeOperations(arrayList);
-        System.out.printf("array list remove = %d \n", delay);
+        LOGGER.info("Array list remove = {}", delay);
     }
 
     private static long addOperations(List<Integer> list) {
