@@ -7,7 +7,7 @@ import ru.student.reader.XmlReader;
 import java.util.List;
 
 public class Main {
-    public static final String XML_FILE_PATH = "11_lab/src/main/resources/file.xml";
+    public static final String XML_FILE_PATH = "lab11/src/main/resources/file.xml";
 
     private static final List<Student> students = List.of(
             new Student("Maxim", "Borisov"),
