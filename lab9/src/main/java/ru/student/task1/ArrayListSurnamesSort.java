@@ -2,6 +2,8 @@ package ru.student.task1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class ArrayListSurnamesSort {
 
@@ -19,6 +21,10 @@ public class ArrayListSurnamesSort {
         System.out.println("--- Sorted ---");
         input.sort(String::compareToIgnoreCase);
         input.forEach(System.out::println);
+
+        System.out.println("--- Counted ---");
+        input.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .forEach((surname, occurrences) -> System.out.println(surname + " : " + occurrences));
 
         System.out.println("--- Distinct ---");
         input.stream().distinct().forEachOrdered(System.out::println);
