@@ -1,2 +1,14 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+    version = "15.0.1"
+    modules = ['javafx.controls', 'javafx.graphics']
+}
+
+mainClassName = "ru.student.App"
+
 dependencies {
 }
