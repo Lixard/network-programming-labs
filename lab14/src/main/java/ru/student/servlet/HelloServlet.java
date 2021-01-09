@@ -1,7 +1,7 @@
 package ru.student.servlet;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.student.repository.UserRepository;
+import ru.student.lab15.repository.UserRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.student.repository.UserRepository;
+import ru.student.lab15.repository.UserRepository;
 import ru.student.servlet.AuthServlet;
 import ru.student.servlet.HelloServlet;
 

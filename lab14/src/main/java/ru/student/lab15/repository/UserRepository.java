@@ -1,7 +1,7 @@
-package ru.student.repository;
+package ru.student.lab15.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.student.entity.User;
+import ru.student.lab15.entity.User;
 
 import java.util.Optional;
 
