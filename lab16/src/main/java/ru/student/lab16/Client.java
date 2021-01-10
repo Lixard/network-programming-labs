@@ -14,7 +14,7 @@ public class Client {
 
     public static void main(String[] args) throws MalformedURLException {
         final var url = new URL("http://localhost:8080/math?wsdl");
-        final var qname = new QName("http://lab16.student.ru/", "MathServiceService");
+        final var qname = new QName("http://lab16.student.ru/", "MathServiceImplService");
         final var service = Service.create(url, qname);
         final var port = service.getPort(MathService.class);
         LOGGER.info("1+1 = {}", port.add(1, 1));
