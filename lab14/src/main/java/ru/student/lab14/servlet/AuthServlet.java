@@ -1,4 +1,4 @@
-package ru.student.servlet;
+package ru.student.lab14.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
