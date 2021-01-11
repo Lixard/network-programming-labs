@@ -1,4 +1,5 @@
 dependencies {
     implementation "com.sun.xml.ws:jaxws-rt:2.3.3"
     implementation "com.sun.xml.ws:rt:2.3.3"
+    implementation "org.springframework.boot:spring-boot-starter-web:2.4.1"
 }

@@ -1,11 +1,9 @@
-package ru.student.lab16;
+package ru.student.lab16.webservice;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
 
-@WebService(endpointInterface = "ru.student.lab16.MathService")
-@SOAPBinding(style = SOAPBinding.Style.RPC)
+@WebService(endpointInterface = "ru.student.lab16.webservice.MathService")
 public class MathServiceImpl implements MathService {
 
     @WebMethod
